@@ -1,0 +1,23 @@
+
+{
+  "loginPage": {
+    "usernameInput": "[type='text']",
+    "passwordInput": "[type='password']",
+    "loginButton": "[type='submit']" 
+  },
+
+  "productsPage": {
+    "addTocart": "button[class='btn_primary btn_inventory']",
+    "clickCart": "svg[aria-hidden='true']"
+   
+  },
+"checkOutPage": {
+  "clickCheckout": "a[class='btn_action checkout_button']",
+  "firstName": "input[id='first-name']",
+  "lastName": "input[id='last-name']",
+  "postalcode": "input[id='postal-code']",
+  "submitButton": "input[type='submit']"
+}
+}
+
+
