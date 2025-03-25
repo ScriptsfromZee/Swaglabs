@@ -1,5 +1,5 @@
 
-# Swaglabs-Demo
+# Swaglabs
 Swag Labs, also known as Sauce Labs, is a web application designed for testing and showcasing e-commerce functionality. Here are some key details about the site:
 
 ## Overview
@@ -50,7 +50,7 @@ Finally, run the test scripts within the e2e folder by doing the following:
 
 Navigate to the root directory with a command line terminal.
 
-Run npm install, this install all the project dependencies.
+Run npm install, this installs all the project dependencies.
 
 If you have Chrome installed run npm run cy-chrome or npm run cy-firefox if you have Firefox installed to start the test.
 
