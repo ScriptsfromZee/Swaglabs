@@ -36,11 +36,11 @@ Have a browser installed on your computer.
 ## Setup
 Open a command line terminal (Git bash preferably) and navigate to a directory where you would like to save the work folder using cd.
 
-Clone the repository with git clone https://github.com/ScriptsfromZee/Swaglabs-Demo-
+Clone the repository with git clone https://github.com/ScriptsfromZee/Swaglabs
 
 Once you are done cloning, you should navigate to the folder you cloned.
 
-You should type: "cd Swaglabs-Demo-"
+You should type: "cd Swaglabs"
 
 This command will move you into that directory.
 
