@@ -2,6 +2,7 @@ describe("Login Test Suite", () => {
   let loginPage;
   let productsPage;
   let checkOutPage;
+  
   beforeEach(() => {
     cy.fixture('elementsLocator').then((data) => {
       loginPage = data.loginPage;
@@ -18,11 +19,8 @@ describe("Login Test Suite", () => {
     cy.log("Navigated to URL");
 
     // Fill in username and password 
-    cy.get(loginPage.usernameInput).type("standard_user");
-    cy.get(loginPage.passwordInput).type("secret_sauce");
-
-    // Click the login button 
-    cy.get(loginPage.loginButton).click();
+    cy.login('standard_user','secret_sauce')
+    
     cy.log("User has signed in successfully");
 
     // Add items to cart
@@ -70,11 +68,9 @@ describe("Login Test Suite", () => {
     cy.log("Navigated to URL");
 
     // Fill in username and password 
-    cy.get(loginPage.usernameInput).type("locked_out_user");
-    cy.get(loginPage.passwordInput).type("secret_sauce");
+    cy.login("locked_out_user",'secret_sauce')
+    cy.contains('Epic sadface: Sorry, this user has been locked out.').should('be.visible')
 
-    // Click the login button 
-    cy.get(loginPage.loginButton).click();
   })
 
 });
