@@ -3,7 +3,7 @@ describe("Login Test Suite", () => {
   let productsPage;
   let checkOutPage;
   
-  beforeEach(() => {
+  before(() => {
     cy.fixture('elementsLocator').then((data) => {
       loginPage = data.loginPage;
       productsPage = data.productsPage
@@ -64,11 +64,11 @@ describe("Login Test Suite", () => {
     cy.log("This user should not be able to log in");
 
     // Navigate to the Swag Labs URL
-    cy.visit("/");
-    cy.log("Navigated to URL");
+    cy.visit("/")
+    cy.log("Navigated to URL")
 
     // Fill in username and password 
-    cy.login("locked_out_user",'secret_sauce')
+    cy.login("locked_out_user","secret_sauce")
     cy.contains('Epic sadface: Sorry, this user has been locked out.').should('be.visible')
 
   })

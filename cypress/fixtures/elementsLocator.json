@@ -1,9 +1,9 @@
 
 {
   "loginPage": {
-    "usernameInput": "[type='text']",
-    "passwordInput": "[type='password']",
-    "loginButton": "[type='submit']" 
+    "usernameInput": "#user-name",
+    "passwordInput": "#password",
+    "loginButton": "#login-button" 
   },
 
   "productsPage": {
